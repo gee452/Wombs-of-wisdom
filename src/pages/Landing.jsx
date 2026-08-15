@@ -192,7 +192,7 @@ function Landing() {
 
             <div className="mt-8">
              <Link to="/AskGogo">
-             <Button>
+             <Button size="lg">
                 Meet Ask Gogo
               </Button>
               </Link> 
@@ -316,11 +316,11 @@ function Landing() {
                 <p className="mt-3 font-body text-sm leading-6 text-wisdom-black/55">
                   Discover stories, practices and knowledge about your beauty.
                 </p>
-
+ <Link to="/Explore">
                 <span className="mt-6 inline-block font-body text-sm font-semibold text-wisdom-rust">
                   Explore →
                 </span>
-
+</Link>
               </article>
             ))}
 
@@ -363,13 +363,11 @@ function Landing() {
       </p>
 
       <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-        <Button>
+         <Link to="/AskGogo">
+        <Button size="lg">
           Share Your Wisdom
         </Button>
-
-        <Button variant="secondary">
-          Learn More
-        </Button>
+</Link>
       </div>
 
     </div>
@@ -449,27 +447,6 @@ function Landing() {
       </section>
 
 
-      {/* SAFETY */}
-      <section className="bg-white px-6 py-16">
-        <div className="mx-auto max-w-4xl rounded-3xl bg-wisdom-green p-8 text-center text-white md:p-12">
-
-          <p className="font-body text-sm font-semibold uppercase tracking-[0.2em] text-wisdom-orange">
-            Built With Care
-          </p>
-
-          <h2 className="mt-4 font-display text-3xl md:text-4xl">
-            Traditional wisdom deserves respect, context and care.
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl font-body text-sm leading-7 text-white/65">
-            Wombs of Wisdom is designed to preserve cultural knowledge
-            while clearly distinguishing traditional practices from
-            medically verified information.
-          </p>
-
-        </div>
-      </section>
-
 
       {/* FINAL CTA */}
       <section className="bg-wisdom-rust px-6 py-20 text-center text-white md:py-24">
@@ -488,6 +465,7 @@ function Landing() {
         </p>
 
         <div className="mt-8">
+           <Link to="/Contribute">
           <Button
             variant="secondary"
             size="lg"
@@ -495,6 +473,7 @@ function Landing() {
           >
             Get Started
           </Button>
+          </Link>
         </div>
 
       </section>

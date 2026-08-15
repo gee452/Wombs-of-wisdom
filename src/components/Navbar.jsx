@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
 
+import { Link } from "react-router-dom";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,14 +43,16 @@ function Navbar() {
         {/* Desktop Actions */}
         <div className="hidden items-center gap-4 lg:flex">
           <a
-            href="/login"
+            href="/signin"
             className="font-body text-sm font-semibold text-wisdom-green transition-colors hover:text-wisdom-rust"
           >
             Sign In
           </a>
-
+ <Link to="/Contribute">
           <Button>Get Started</Button>
+          </Link>
         </div>
+        
 
         {/* Mobile Menu Button */}
         <button
@@ -79,7 +83,7 @@ function Navbar() {
 
             <div className="flex flex-col gap-3 border-t border-wisdom-beige pt-5">
               <a
-                href="/login"
+                href="/signin"
                 className="font-body text-sm font-semibold text-wisdom-green"
               >
                 Sign In

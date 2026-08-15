@@ -18,7 +18,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/ask-gogo" element={<AskGogo />} />
+          <Route path="/askgogo" element={<AskGogo />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/contribute" element={<Contribute />} />
           <Route path="/my-library" element={<MyLibrary />} />
