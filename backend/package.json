@@ -1,0 +1,23 @@
+{
+  "name": "wombs-of-wisdom-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Wombs of Wisdom",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.17.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.23.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
